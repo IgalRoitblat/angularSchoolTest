@@ -1,0 +1,11 @@
+<h2>Students</h2>
+<div class="container">
+	<div class="student" *ngFor="let student of students" (click)="onClick(student.id)">
+		<h3>{{student.name}}</h3>
+		<div *ngIf="student.visibility">
+			<div>Grade: {{this.student.avgGrade}}</div>
+			<div>Phone Number: {{this.student.phone}}</div>
+			<img src={{this.student.image}}>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,11 @@
+<h2>Courses</h2>
+<div class="container">
+	<div class="course" *ngFor="let course of courses" (click)="onClick(course.id)">
+		<h3>{{course.name}}</h3>
+		<div *ngIf="course.visibility">
+			<div>Duration: {{this.course.duration}}</div>
+			<div>Description: {{this.course.description}}</div>
+			<img src={{this.course.image}}>
+		</div>
+	</div>
+</div>

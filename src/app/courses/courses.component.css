@@ -1,0 +1,28 @@
+.container {
+	min-height: 70rem;
+}
+
+.course {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	min-height: 10rem;
+	width: 30%;
+	cursor: pointer;
+
+}
+
+h2 {
+	text-decoration: underline;
+}
+
+h3 {
+	width: 100%;
+}
+
+img {
+	margin-top: .5rem;
+	height: 10rem;
+	width: 10rem;
+	border-radius: 50%;
+}
